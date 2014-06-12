@@ -1,0 +1,23 @@
+{
+  "name": "droopy-geolocation",
+  "version": "0.0.0",
+  "description": "Geolocation helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/droopytersen/droopy-geolocation"
+  },
+  "keywords": [
+    "droopy",
+    "geolocation"
+  ],
+  "author": "Andrew Petersen",
+  "license": "NONE",
+  "bugs": {
+    "url": "https://github.com/droopytersen/droopy-geolocation/issues"
+  },
+  "homepage": "https://github.com/droopytersen/droopy-geolocation"
+}
