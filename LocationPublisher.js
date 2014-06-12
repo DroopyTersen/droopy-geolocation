@@ -1,3 +1,5 @@
+var EventAggregator = require("droopy-events");
+
 var LocationPublisher = function(opts) {
 	var options = opts || {};
 	this.watchId = null;
@@ -56,3 +58,5 @@ LocationPublisher.prototype.getLocation = function(opts) {
 		navigator.geolocation.getCurrentPosition(this.locationFound.bind(this), this.error.bind(this), options);
 	}
 };
+
+module.exports = LocationPublisher;

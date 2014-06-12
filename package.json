@@ -1,6 +1,6 @@
 {
   "name": "droopy-geolocation",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Geolocation helpers",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/droopytersen/droopy-geolocation/issues"
   },
-  "homepage": "https://github.com/droopytersen/droopy-geolocation"
+  "homepage": "https://github.com/droopytersen/droopy-geolocation",
+  "dependencies": {
+    "droopy-events": "0.0.0"
+  }
 }

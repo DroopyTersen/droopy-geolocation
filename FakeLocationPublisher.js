@@ -1,8 +1,10 @@
+var EventAggregator = require("droopy-events");
+
 var FakeLocationPublisher = function(opts) {
 	var options = opts || {};
 	this.timer = null;
 	EventAggregator.call(this);
-	this.pos = { lat: 43, long: -88, accuracy: 10 }
+	this.pos = { lat: 43, long: -88, accuracy: 10 };
 	this.interval = options.throttle || 200;
 	this.eventAggregator = options.events || null;
 	if (options.start !== false) {
@@ -14,8 +16,8 @@ FakeLocationPublisher.prototype = new EventAggregator();
 
 FakeLocationPublisher.prototype.locationFound = function() {
 	var eventName = "locationFound";
-	this.pos.lat = this.pos.lat + .00005;
-	this.pos.long = this.pos.long - .00004;
+	this.pos.lat = this.pos.lat + 0.00005;
+	this.pos.long = this.pos.long - 0.00004;
 	this.pos.timestamp = (new Date()).toJSON();
 	
 	this.trigger(eventName, this.pos);
@@ -33,4 +35,6 @@ FakeLocationPublisher.prototype.turnOff = function() {
 	if (this.timer) {
 		clearTimeout(this.timer);
 	}
-}
+};
+
+module.exports = FakeLocationPublisher;

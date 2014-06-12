@@ -1,2 +1,2 @@
-exports.LocationPublisher = require('LocationPublisher');
-exports.FakeLocationPublisher = require('FakeLocationPublisher');
+exports.LocationPublisher = require('./LocationPublisher');
+exports.FakeLocationPublisher = require('./FakeLocationPublisher');
